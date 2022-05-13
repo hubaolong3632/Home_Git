@@ -1,0 +1,1033 @@
+
+hbl@dzqdb1 MINGW64 ~
+$ git config --global user.name "your_username"
+
+hbl@dzqdb1 MINGW64 ~
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~
+$ git config --global user.email 911412667@qq.com
+
+hbl@dzqdb1 MINGW64 ~
+$ config --list
+bash: config: command not found
+
+hbl@dzqdb1 MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=true
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=your_username
+user.email=911412667@qq.com
+
+hbl@dzqdb1 MINGW64 ~
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~
+$ git init
+Initialized empty Git repository in C:/Users/hbl/.git/
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/hbl/.git/
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git add C:\Users\hbl\Desktop\gig01.txt
+fatal: C:UsershblDesktopgig01.txt: 'C:UsershblDesktopgig01.txt' is outside repository at 'C:/Users/hbl'
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git add gig01.txt
+fatal: pathspec 'gig01.txt' did not match any files
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git add gig01.txt
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git statur
+git: 'statur' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: could not open directory '「开始」菜单/': Permission denied
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gig01.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .WebStorm10/
+        .android/
+        .dotnet/
+        .emulator_console_auth_token
+        .erlang.cookie
+        .gitconfig
+        .gradle/
+        .jdks/
+        .lesshst
+        .m2/
+        .ngrok2/
+        .nuget/
+        .openjfx/
+        .oracle_jre_usage/
+        .translation/
+        123.txt
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TM.blf
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000002.regtrans-ms
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WebstormProjects/
+        XiangMuSan_2021_10_16_154404.jfr
+        _2021_11_03_195829.jfr
+        battery-report.html
+        net
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        rabbitmq-plugins
+        refenchazhao_2021_09_23_183911.jfr
+        refenchazhao_2021_09_23_184112.jfr
+        refenchazhao_2021_09_23_184117.jfr
+        source/
+        "\346\234\252\345\221\275\345\220\2152.cpp"
+
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git commit -m 'git版本库与初始化提交操作'
+[master (root-commit) cbb0ed4] git版本库与初始化提交操作
+ 1 file changed, 1 insertion(+)
+ create mode 100644 gig01.txt
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git log
+commit cbb0ed47cdfeb8a46aa9b414526f3d22cd0741a4 (HEAD -> master)
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:09:08 2022 +0800
+
+    git版本库与初始化提交操作
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: could not open directory '「开始」菜单/': Permission denied
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gig01.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .WebStorm10/
+        .android/
+        .dotnet/
+        .emulator_console_auth_token
+        .erlang.cookie
+        .gitconfig
+        .gradle/
+        .jdks/
+        .lesshst
+        .m2/
+        .ngrok2/
+        .nuget/
+        .openjfx/
+        .oracle_jre_usage/
+        .translation/
+        123.txt
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TM.blf
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000002.regtrans-ms
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WebstormProjects/
+        XiangMuSan_2021_10_16_154404.jfr
+        _2021_11_03_195829.jfr
+        battery-report.html
+        net
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        rabbitmq-plugins
+        refenchazhao_2021_09_23_183911.jfr
+        refenchazhao_2021_09_23_184112.jfr
+        refenchazhao_2021_09_23_184117.jfr
+        source/
+        "\346\234\252\345\221\275\345\220\2152.cpp"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git add gig01.txt
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: could not open directory '「开始」菜单/': Permission denied
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   gig01.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .WebStorm10/
+        .android/
+        .dotnet/
+        .emulator_console_auth_token
+        .erlang.cookie
+        .gitconfig
+        .gradle/
+        .jdks/
+        .lesshst
+        .m2/
+        .ngrok2/
+        .nuget/
+        .openjfx/
+        .oracle_jre_usage/
+        .translation/
+        123.txt
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TM.blf
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000002.regtrans-ms
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WebstormProjects/
+        XiangMuSan_2021_10_16_154404.jfr
+        _2021_11_03_195829.jfr
+        battery-report.html
+        net
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        rabbitmq-plugins
+        refenchazhao_2021_09_23_183911.jfr
+        refenchazhao_2021_09_23_184112.jfr
+        refenchazhao_2021_09_23_184117.jfr
+        source/
+        "\346\234\252\345\221\275\345\220\2152.cpp"
+
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git commit -m '开启时光穿梭机'
+[master 4f38977] 开启时光穿梭机
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git commit -m '第三次修改'
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: could not open directory '「开始」菜单/': Permission denied
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gig01.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .WebStorm10/
+        .android/
+        .dotnet/
+        .emulator_console_auth_token
+        .erlang.cookie
+        .gitconfig
+        .gradle/
+        .jdks/
+        .lesshst
+        .m2/
+        .ngrok2/
+        .nuget/
+        .openjfx/
+        .oracle_jre_usage/
+        .translation/
+        123.txt
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TM.blf
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000002.regtrans-ms
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WebstormProjects/
+        XiangMuSan_2021_10_16_154404.jfr
+        _2021_11_03_195829.jfr
+        battery-report.html
+        net
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        rabbitmq-plugins
+        refenchazhao_2021_09_23_183911.jfr
+        refenchazhao_2021_09_23_184112.jfr
+        refenchazhao_2021_09_23_184117.jfr
+        source/
+        "\346\234\252\345\221\275\345\220\2152.cpp"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ --git  diff HEAD --gig01.txt
+bash: --git: command not found
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ --git diff HEAD -- gig01.txt
+bash: --git: command not found
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git diff HEAD -- gig01.txt
+diff --git a/gig01.txt b/gig01.txt
+index 691436b..78d6f8b 100644
+--- a/gig01.txt
++++ b/gig01.txt
+@@ -1,2 +1,3 @@
+ 版本吃素实话
+-开启次数
+\ No newline at end of file
++开启次数
++第三次开启
+\ No newline at end of file
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git add test.txt
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git commit -m 'text文件提交'
+[master 1b390fd] text文件提交
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: could not open directory '「开始」菜单/': Permission denied
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gig01.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .WebStorm10/
+        .android/
+        .dotnet/
+        .emulator_console_auth_token
+        .erlang.cookie
+        .gitconfig
+        .gradle/
+        .jdks/
+        .lesshst
+        .m2/
+        .ngrok2/
+        .nuget/
+        .openjfx/
+        .oracle_jre_usage/
+        .translation/
+        123.txt
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TM.blf
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000002.regtrans-ms
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WebstormProjects/
+        XiangMuSan_2021_10_16_154404.jfr
+        _2021_11_03_195829.jfr
+        battery-report.html
+        net
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        rabbitmq-plugins
+        refenchazhao_2021_09_23_183911.jfr
+        refenchazhao_2021_09_23_184112.jfr
+        refenchazhao_2021_09_23_184117.jfr
+        source/
+        "\346\234\252\345\221\275\345\220\2152.cpp"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ get reset HEAD
+bash: get: command not found
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reset HEAD
+Unstaged changes after reset:
+M       gig01.txt
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: could not open directory '「开始」菜单/': Permission denied
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gig01.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .WebStorm10/
+        .android/
+        .dotnet/
+        .emulator_console_auth_token
+        .erlang.cookie
+        .gitconfig
+        .gradle/
+        .jdks/
+        .lesshst
+        .m2/
+        .ngrok2/
+        .nuget/
+        .openjfx/
+        .oracle_jre_usage/
+        .translation/
+        123.txt
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TM.blf
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000002.regtrans-ms
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WebstormProjects/
+        XiangMuSan_2021_10_16_154404.jfr
+        _2021_11_03_195829.jfr
+        battery-report.html
+        net
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        rabbitmq-plugins
+        refenchazhao_2021_09_23_183911.jfr
+        refenchazhao_2021_09_23_184112.jfr
+        refenchazhao_2021_09_23_184117.jfr
+        source/
+        "\346\234\252\345\221\275\345\220\2152.cpp"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: could not open directory '「开始」菜单/': Permission denied
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gig01.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .WebStorm10/
+        .android/
+        .dotnet/
+        .emulator_console_auth_token
+        .erlang.cookie
+        .gitconfig
+        .gradle/
+        .jdks/
+        .lesshst
+        .m2/
+        .ngrok2/
+        .nuget/
+        .openjfx/
+        .oracle_jre_usage/
+        .translation/
+        123.txt
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TM.blf
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000002.regtrans-ms
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WebstormProjects/
+        XiangMuSan_2021_10_16_154404.jfr
+        _2021_11_03_195829.jfr
+        battery-report.html
+        net
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        rabbitmq-plugins
+        refenchazhao_2021_09_23_183911.jfr
+        refenchazhao_2021_09_23_184112.jfr
+        refenchazhao_2021_09_23_184117.jfr
+        source/
+        "\346\234\252\345\221\275\345\220\2152.cpp"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git log
+commit 1b390fd9c312cb4b4baa5f495941f6abc9df63de (HEAD -> master)
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:34:04 2022 +0800
+
+    text文件提交
+
+commit 4f389771b245b329fcaccb5b9921d2c61ee66332
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:24:25 2022 +0800
+
+    开启时光穿梭机
+
+commit cbb0ed47cdfeb8a46aa9b414526f3d22cd0741a4
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:09:08 2022 +0800
+
+    git版本库与初始化提交操作
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git add gig01
+fatal: pathspec 'gig01' did not match any files
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git add gig01.txt
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git log
+commit 1b390fd9c312cb4b4baa5f495941f6abc9df63de (HEAD -> master)
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:34:04 2022 +0800
+
+    text文件提交
+
+commit 4f389771b245b329fcaccb5b9921d2c61ee66332
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:24:25 2022 +0800
+
+    开启时光穿梭机
+
+commit cbb0ed47cdfeb8a46aa9b414526f3d22cd0741a4
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:09:08 2022 +0800
+
+    git版本库与初始化提交操作
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git commit -m '最新版'
+[master 9836672] 最新版
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git log
+commit 9836672b8281173313edb0a017ba9330378bd70a (HEAD -> master)
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:54:47 2022 +0800
+
+    最新版
+
+commit 1b390fd9c312cb4b4baa5f495941f6abc9df63de
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:34:04 2022 +0800
+
+    text文件提交
+
+commit 4f389771b245b329fcaccb5b9921d2c61ee66332
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:24:25 2022 +0800
+
+    开启时光穿梭机
+
+commit cbb0ed47cdfeb8a46aa9b414526f3d22cd0741a4
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:09:08 2022 +0800
+
+    git版本库与初始化提交操作
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ cat gig01.txt
+版本吃素实话
+开启次数
+第三次开启
+第四次启动
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reset --hard HEAD~1
+HEAD is now at 1b390fd text文件提交
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git cat gig01.txt
+git: 'cat' is not a git command. See 'git --help'.
+
+The most similar commands are
+        clean
+        mktag
+        stage
+        stash
+        tag
+        var
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ cat gig01.txt
+版本吃素实话
+开启次数
+hbl@dzqdb1 MINGW64 ~ (master)
+$ cat gig01.txt^C
+
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git log
+commit 1b390fd9c312cb4b4baa5f495941f6abc9df63de (HEAD -> master)
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:34:04 2022 +0800
+
+    text文件提交
+
+commit 4f389771b245b329fcaccb5b9921d2c61ee66332
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:24:25 2022 +0800
+
+    开启时光穿梭机
+
+commit cbb0ed47cdfeb8a46aa9b414526f3d22cd0741a4
+Author: your_username <911412667@qq.com>
+Date:   Thu May 12 20:09:08 2022 +0800
+
+    git版本库与初始化提交操作
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reflog
+1b390fd (HEAD -> master) HEAD@{0}: reset: moving to HEAD~1
+9836672 HEAD@{1}: commit: 最新版
+1b390fd (HEAD -> master) HEAD@{2}: reset: moving to HEAD
+1b390fd (HEAD -> master) HEAD@{3}: commit: text文件提交
+4f38977 HEAD@{4}: commit: 开启时光穿梭机
+cbb0ed4 HEAD@{5}: commit (initial): git版本库与初始化提交操作
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reflog -5 --pretty=oneline
+1b390fd (HEAD -> master) HEAD@{0}: reset: moving to HEAD~1
+9836672 HEAD@{1}: commit: 最新版
+1b390fd (HEAD -> master) HEAD@{2}: reset: moving to HEAD
+1b390fd (HEAD -> master) HEAD@{3}: commit: text文件提交
+4f38977 HEAD@{4}: commit: 开启时光穿梭机
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reflog -5 --pretty=oneline
+1b390fd (HEAD -> master) HEAD@{0}: reset: moving to HEAD~1
+9836672 HEAD@{1}: commit: 最新版
+1b390fd (HEAD -> master) HEAD@{2}: reset: moving to HEAD
+1b390fd (HEAD -> master) HEAD@{3}: commit: text文件提交
+4f38977 HEAD@{4}: commit: 开启时光穿梭机
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reset --hard 4f38977
+HEAD is now at 4f38977 开启时光穿梭机
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: could not open directory '「开始」菜单/': Permission denied
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .WebStorm10/
+        .android/
+        .dotnet/
+        .emulator_console_auth_token
+        .erlang.cookie
+        .gitconfig
+        .gradle/
+        .jdks/
+        .lesshst
+        .m2/
+        .ngrok2/
+        .nuget/
+        .openjfx/
+        .oracle_jre_usage/
+        .translation/
+        123.txt
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        IntelGraphicsProfiles/
+        Links/
+        MicrosoftEdgeBackups/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TM.blf
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{3e485df3-a430-11eb-8fd8-bdca9b15c05d}.TMContainer00000000000000000002.regtrans-ms
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        WebstormProjects/
+        XiangMuSan_2021_10_16_154404.jfr
+        _2021_11_03_195829.jfr
+        battery-report.html
+        net
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        rabbitmq-plugins
+        refenchazhao_2021_09_23_183911.jfr
+        refenchazhao_2021_09_23_184112.jfr
+        refenchazhao_2021_09_23_184117.jfr
+        source/
+        "\346\234\252\345\221\275\345\220\2152.cpp"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ cat gig01.txt
+版本吃素实话
+开启次数
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reset --hard 4f38977
+HEAD is now at 4f38977 开启时光穿梭机
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$  git reflog -5 --pretty=oneline
+4f38977 (HEAD -> master) HEAD@{0}: reset: moving to 4f38977
+4f38977 (HEAD -> master) HEAD@{1}: reset: moving to 4f38977
+1b390fd HEAD@{2}: reset: moving to HEAD~1
+9836672 HEAD@{3}: commit: 最新版
+1b390fd HEAD@{4}: reset: moving to HEAD
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reset --hard 1b390
+HEAD is now at 1b390fd text文件提交
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ cat gig01.txt
+版本吃素实话
+开启次数
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reset --hard 9836672
+HEAD is now at 9836672 最新版
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git reset --hard 9836672
+HEAD is now at 9836672 最新版
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ cat gig01.txt
+版本吃素实话
+开启次数
+第三次开启
+第四次启动
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git ls~files
+git: 'ls~files' is not a git command. See 'git --help'.
+
+The most similar command is
+        ls-files
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git ls files
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git ls-files
+gig01.txt
+test.txt
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git checkout --text.txt
+error: unknown option `text.txt'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge, diff3, or zdiff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git checkout --test.txt
+error: unknown option `test.txt'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge, diff3, or zdiff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git checkout -- test.txt
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git rm text.txt
+fatal: pathspec 'text.txt' did not match any files
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ git rm test.txt
+rm 'test.txt'
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$ ^C
+
+hbl@dzqdb1 MINGW64 ~ (master)
+$
