@@ -1,0 +1,12 @@
+1 把我给你的代码运行起来
+ Class c=Class.forName(name);
+ Constructor declaredConstructor = c.getDeclaredConstructor(Frame.class, String.class);
+ Object o = declaredConstructor.newInstance(MainFrame.this, title);
+ JDialog j= (JDialog)o;
+理解一下利用发射创建对象的方法
+2 结合以前我们做过的利用角色控制菜单打印的项目
+结合图形实现
+2.1 登录窗口---》进入主界面---》显示不同的菜单和子菜单项--》点击菜单生成
+菜单项对应的对话框（反射实现）
+
+以上是反射前的预热项目！看谁能第一个做出来！
